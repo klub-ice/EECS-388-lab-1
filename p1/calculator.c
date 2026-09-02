@@ -4,8 +4,6 @@
 #include <stdio.h>
 
 int calculate() {
-    // basic calculator function that can add subtract, multiply, divide, square, and cube two numbers
-    // variable declarations
     int num1, num2;
     char op;
 
@@ -14,24 +12,29 @@ int calculate() {
         printf("Error: Invalid input\n");
         return 1;
     }
+
     printf("Enter first number\n");
     if (scanf("%d", &num1)) {
         printf("Error: Invalid input\n");
         return 1;
     }
+
     if (op == '2') {
         printf("Result: %d\n", num1 * num1);
         return 0;
     }
+
     if (op == '3') {
         printf("Result: %d\n", num1 * num1 * num1);
         return 0;
     }
+
     printf("Enter second number\n");
     if (scanf("%d", &num2)) {
         printf("Error: Invalid input\n");
         return 1;
     }
+
     if (op == '+') {
         printf("Result: %d\n", num1 + num2);
     }
@@ -52,6 +55,7 @@ int calculate() {
         printf("Error: Invalid operator\n");
         return 1;
     }
+
     return 0;
 }
 
