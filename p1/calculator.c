@@ -8,13 +8,13 @@ int calculate() {
     char op;
 
     printf("Enter operation\n");
-    if (scanf(" %c", &op) != 1) {
+    if (scanf(" %c", &op)) {
         printf("Error: Invalid input\n");
         return 1;
     }
 
     printf("Enter first number\n");
-    if (scanf("%d", &num1) != 1) {
+    if (scanf("%d", &num1)) {
         printf("Error: Invalid input\n");
         return 1;
     }
@@ -30,7 +30,7 @@ int calculate() {
     }
 
     printf("Enter second number\n");
-    if (scanf("%d", &num2) != 1) {
+    if (scanf("%d", &num2)) {
         printf("Error: Invalid input\n");
         return 1;
     }
