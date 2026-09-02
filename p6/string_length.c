@@ -5,16 +5,11 @@
 #include <stdio.h>
 
 int string_length(char *str) {
-    int len = 0;
-    for i in *str {
-        len++;
-    }
-    printf("Length of the string is: %d\n", len);
-    return len;
+    return 0;
 }
 
 int main() {
-    char input[] = '';
+    char input[] = "";
     scanf("Enter String: %s", input);
     string_length(input);
     return 0;
