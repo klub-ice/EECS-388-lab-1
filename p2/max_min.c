@@ -4,6 +4,13 @@
 #include <stdio.h>
 
 int max_min(int array) {
+    //goal to be able find max, min or both depending on user input
+    char input;
+    scanf("Enter m, n, or b: \n %c", &input);
+    if (input == 'm') {
+        int max = array[0];
+
+    }
     return 0;
 }
 
