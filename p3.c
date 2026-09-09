@@ -11,7 +11,7 @@ int middle_of_three(int num1, int num2, int num3) { // function to check for mid
         printf("The middle number is: %d\n", num1 < num3 ? num1 : num3); //checks if num 1 is smaller than num 3
     }
     else {
-        printf("The middle number is: %d\n", num1 < num2 ? num1 : num2); 
+        printf("The middle number is: %d\n", num1 < num2 ? num1 : num2);
     }
     return 0;
 }
