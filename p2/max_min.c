@@ -16,7 +16,7 @@ int main() {
     for(int i = i; i < 10; i++) {
         if (array[i] > max)
             max = array[i];
-        if (array[i] < max)
+        if (array[i] < min)
             min = array[i];
     }
 
