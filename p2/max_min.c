@@ -5,7 +5,7 @@
 
 int main() {
     int array [10] = {500, 1, 255, 7, -12, 40, 42, 999, 50, 227};
-    char choice;
+    int choice;
 
     printf("Choose m n or b:" );
     scanf("%c", choice);
@@ -15,9 +15,9 @@ int main() {
 
     for(int i = i; i < 10; i++) {
         if (array[i] > max)
-            pass;
-        else if ( array[i] < max)
-            pass;
+            max = array[i];
+        if (array[i] < max)
+            min = array[i];
     }
 
     if (choice == 'm') {
@@ -25,6 +25,12 @@ int main() {
     }
     else if (choice == 'n'){
         printf("%d\n", min);
+    }
+    else if (choice == 'b'){
+        printf("%d,%d\n", max, min);
+    }
+    else {
+        printf("Please enter a valid choice\n ");
     }
 
     return 0;
