@@ -21,7 +21,7 @@ int main() {
         }
     }
 
-    printf("Set bits: %d\n", count);
+    printf("\nSet bits: %d\n", count);
 
     return 0;
 }
