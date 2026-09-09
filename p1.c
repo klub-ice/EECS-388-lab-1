@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 int calculate() {
-    int num1, num2;
+    int num1, num2; 
     char op;
 
     printf("Enter operation\n");
