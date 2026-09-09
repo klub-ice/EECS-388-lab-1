@@ -1,6 +1,3 @@
-//
-// Created by Zoey on 9/2/2026.
-//
 #include <stdio.h>
 
 int calculate() {
@@ -8,13 +5,13 @@ int calculate() {
     char op;
 
     printf("Enter operation\n");
-    if (scanf(" %c", &op)) {
+    if (scanf(" %c", &op) != 1) {
         printf("Error: Invalid input\n");
-        return 1;
+        return 0;
     }
 
     printf("Enter first number\n");
-    if (scanf("%d", &num1)) {
+    if (scanf("%d", &num1) != 1) {
         printf("Error: Invalid input\n");
         return 1;
     }

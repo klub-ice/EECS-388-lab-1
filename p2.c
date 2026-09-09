@@ -3,34 +3,41 @@
 //
 #include <stdio.h>
 
-int main() {
-    int array [10] = {500, 1, 255, 7, -12, 40, 42, 999, 50, 227};
+int main(void) {
+    int array[10] = {500, 1, 255, 7, -12, 40, 42, 999, 50, 227};
     int choice;
+    int max;
+    int min;
 
-    printf("Choose m n or b:" ); // choices for user to pick
-    scanf("%c", choice);
+    printf("Choose m n or b: ");
+    if (scanf(" %c", &choice) != 1) {
+        printf("Please enter a valid choice\n");
+        return 1;
+    }
 
-    int max = array[0]; // sets max to first array slot
-    int min = array[0];// sets min to first array slot
+    max = array[0];
+    min = array[0];
 
-    for(int i = i; i < 10; i++) { // loops through array to find max and min
-        if (array[i] > max)
+    for (int i = 0; i < 10; i++) {
+        if (array[i] > max) {
             max = array[i];
-        if (array[i] < min)
+        }
+        if (array[i] < min) {
             min = array[i];
+        }
     }
-    // if statement tree to decide what happens based on user input
+
     if (choice == 'm') {
-        printf(" %d\n", max);
+        printf("%d\n", max);
     }
-    else if (choice == 'n'){
+    else if (choice == 'n') {
         printf("%d\n", min);
     }
-    else if (choice == 'b'){
+    else if (choice == 'b') {
         printf("%d,%d\n", max, min);
     }
     else {
-        printf("Please enter a valid choice\n ");
+        printf("Please enter a valid choice\n");
     }
 
     return 0;

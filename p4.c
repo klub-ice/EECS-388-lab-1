@@ -8,7 +8,7 @@ int main() {
     int count = 0;
 
     printf("Enter integer: \n");
-    scanf("%d", num);
+    scanf("%d", &num);
 
     printf("Binary: \n");
 
