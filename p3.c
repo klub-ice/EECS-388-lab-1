@@ -3,15 +3,15 @@
 //
 #include <stdio.h>
 
-int middle_of_three(int num1, int num2, int num3) {
-    if (num1 <= num2 && num1 <= num3) {
-        printf("The middle number is: %d\n", num2 < num3 ? num2 : num3);
+int middle_of_three(int num1, int num2, int num3) { // function to check for middle number
+    if (num1 <= num2 && num1 <= num3) { // checks if num 1 is smallest
+        printf("The middle number is: %d\n", num2 < num3 ? num2 : num3); //checks if num 2 is smaller than num 3
     }
-    else if (num2 <= num1 && num2 <= num3) {
-        printf("The middle number is: %d\n", num1 < num3 ? num1 : num3);
+    else if (num2 <= num1 && num2 <= num3) { // checks if num 2 is smallest
+        printf("The middle number is: %d\n", num1 < num3 ? num1 : num3); //checks if num 1 is smaller than num 3
     }
     else {
-        printf("The middle number is: %d\n", num1 < num2 ? num1 : num2);
+        printf("The middle number is: %d\n", num1 < num2 ? num1 : num2); 
     }
     return 0;
 }
