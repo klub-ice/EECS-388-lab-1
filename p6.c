@@ -7,6 +7,6 @@
 int main() {
     char input[] = "";
     scanf("Enter String: %s", input);
-    
+
     return 0;
 }
