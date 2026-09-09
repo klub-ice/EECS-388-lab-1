@@ -4,10 +4,6 @@
 
 #include <stdio.h>
 
-int string_length(char *str) {
-    return 0;
-}
-
 int main() {
     char input[] = "";
     scanf("Enter String: %s", input);
